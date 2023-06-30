@@ -1,0 +1,198 @@
+/* Estilos Gerais */
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    color: #312B2A;
+    background-color: #eae5db;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #703d1b;
+    border-bottom: 1px solid #daa57e;
+    text-transform: lowercase;
+    font-weight: 400;
+    padding-bottom: 6px;
+    margin-top: 12px;
+}
+
+/* Estilos do Header */
+header {
+    background: #703d1b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #eae5db;
+    text-align: center;
+    padding: 1.6em 0;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+nav a {
+    color: #eae5db;
+    margin: 0 0.5em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+/* Estilos para a Seção Sobre */
+#sobre {
+    padding: 2.5em 2em 1em;
+    text-align: left;
+}
+
+#sobre img {
+    width: 100%;
+    margin: 0 auto 24px;
+    display: block;
+    border-radius: 5px;
+}
+
+#sobre p {
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+/* Estilos para a Seção Produtos */
+#produtos {
+    padding: 1em 2em;
+}
+
+.grid-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto {
+    background: #f3eee3;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.produto img {
+    width: 320px;
+    max-width: 90%;
+    margin-top: 8px;
+}
+
+.produto h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-weight: 300;
+    text-transform: lowercase;
+    font-size: 1.1em;
+}
+
+button {
+    background-color: #c4926e;
+    color: #f3eee3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #977055;
+    transform: scale(1.05);
+}
+
+/* Estilos do Footer */
+footer {
+    background: #703d1b;
+    color: #f3eee3;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 12px 0;
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+    margin: 8px 5px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para Tablets */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .grid-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Estilos para Desktop */
+@media screen and (min-width: 1024px) {
+    section {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .sobre img {
+        grid-column: 1;
+    }
+
+    .sobre .texto-sobre {
+        grid-column: 2;
+    }
+
+    #sobre p {
+        margin-top: 0;
+    }
+
+    .grid-produtos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
