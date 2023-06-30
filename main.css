@@ -1,198 +1,255 @@
-/* Estilos Gerais */
+/* Geral */
+/* Estilizando o elemento body, que é o contêiner para todos os elementos visíveis na página */
 body {
-    font-family: "Lato", sans-serif;
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
-    color: #312B2A;
-    background-color: #eae5db;
-    display: flex;
-    flex-direction: column;
+    font-family: "Lato", sans-serif; /* Define a fonte principal para todo o corpo do documento */
+    line-height: 1.8; /* Define a altura da linha do texto */
+    margin: 0; /* Remove a margem padrão ao redor do corpo */
+    padding: 0; /* Remove o padding padrão ao redor do corpo */
+    color: #312b2a; /* Define a cor do texto */
+    background-color: #eae5db; /* Define a cor de fundo do corpo */
+    display: flex; /* Define o modelo de layout de caixa flexível */
+    flex-direction: column; /* Define a direção principal do conteúdo como de cima para baixo */
 }
 
-h2 {
-    color: #703d1b;
-    border-bottom: 1px solid #daa57e;
-    text-transform: lowercase;
-    font-weight: 400;
-    padding-bottom: 6px;
-    margin-top: 12px;
+section {
+    margin: 0 auto; /* Centraliza as seções horizontalmente. */
+    max-width: 500px; /* Define a largura máxima das seções para evitar que se estendam demais em tablets. */
 }
 
-/* Estilos do Header */
+/* Header */
+/* Estilizando o cabeçalho da página */
 header {
-    background: #703d1b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    color: #eae5db;
-    text-align: center;
-    padding: 1.6em 0;
+    background: #703d1b; /* Define a cor de fundo do cabeçalho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra abaixo do cabeçalho */
+    border-bottom-left-radius: 14px; /* Arredonda o canto inferior esquerdo do cabeçalho */
+    border-bottom-right-radius: 14px; /* Arredonda o canto inferior direito do cabeçalho */
+    color: #eae5db; /* Define a cor do texto dentro do cabeçalho */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 1.6em 0; /* Adiciona preenchimento vertical ao cabeçalho */
 }
 
+/* Estilizando o elemento h1 que geralmente contém o título principal da página */
 h1 {
-    font-weight: 400;
-    font-style: italic;
-    text-transform: lowercase;
-    font-size: 40px;
-    margin: 12px 0;
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: italic; /* Define o estilo da fonte como itálico */
+    text-transform: lowercase; /* Transforma o texto em letras minúsculas */
+    font-size: 3em; /* Define o tamanho da fonte */
+    margin: 12px 0; /* Adiciona margem acima e abaixo do elemento */
 }
 
+/* Estilizando links dentro da navegação */
 nav a {
-    color: #eae5db;
-    margin: 0 0.5em;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 300;
-    text-transform: lowercase;
-    cursor: pointer;
+    color: #eae5db; /* Define a cor do link */
+    margin: 0 0.5em; /* Adiciona margem horizontal aos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1.5em; /* Define o tamanho da fonte dos links */
+    font-weight: 300; /* Define a espessura da fonte dos links */
+    text-transform: lowercase; /* Transforma o texto em letras minúsculas */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse sobre os links */
+    transition: font-size 0.3s ease; /* Adiciona animação de transição ao alterar a cor e transformação */
 }
 
-/* Estilos para a Seção Sobre */
+nav a:hover {
+    color: #977055; /* Define a cor texto quando o mouse estiver sobre ele */
+    font-size: 1.6em; /* Aumenta ligeiramente o tamanho da fonte quando o mouse estiver sobre ele */
+}
+
+/* Estilização para elementos h2, geralmente usados para subtítulos */
+h2 {
+    color: #703d1b; /* Define a cor do texto */
+    border-bottom: 1px solid #daa57e; /* Adiciona uma borda na parte inferior do elemento */
+    font-weight: 400; /* Define a espessura da fonte */
+    padding-bottom: 6px; /* Adiciona preenchimento na parte inferior do elemento */
+    margin-top: 12px; /* Adiciona margem na parte superior do elemento */
+}
+
+/* Estiliza o elemento span dentro de h2 */
+h2 span {
+    margin-left: 10px; /* Adiciona margem à esquerda do elemento */
+}
+
+/* Seção Sobre */
+/* Estilizando a seção sobre da página */
 #sobre {
-    padding: 2.5em 2em 1em;
-    text-align: left;
+    padding: 2.5em 2em 1em; /* Adiciona preenchimento em torno da seção */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
+/* Estilizando a imagem dentro da seção sobre */
 #sobre img {
-    width: 100%;
-    margin: 0 auto 24px;
-    display: block;
-    border-radius: 5px;
+    width: 100%; /* Define a largura da imagem para ocupar 100% da largura do contêiner */
+    margin: 0 auto 24px; /* Centraliza a imagem horizontalmente e adiciona margem inferior */
+    display: block; /* Define a imagem como um bloco, ocupando toda a linha */
+    border-radius: 5px; /* Arredonda os cantos da imagem */
 }
 
+/* Estilizando parágrafos dentro da seção sobre */
 #sobre p {
-    font-size: 1em;
-    margin: 1em 0;
+    font-size: 1em; /* Define o tamanho da fonte */
+    margin: 1em 0; /* Adiciona margem acima e abaixo do parágrafo */
 }
 
-/* Estilos para a Seção Produtos */
+/* Seção Produtos */
+/* Estilizando a seção produtos */
 #produtos {
-    padding: 1em 2em;
+    padding: 1em 2em; /* Adiciona preenchimento em torno da seção */
 }
 
+/* Define um grid para a lista de produtos */
 .grid-produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Define o modelo de layout de caixa flexível */
+    flex-wrap: wrap; /* Permite que os itens sejam organizados em várias linhas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
+/* Estilizando cada produto individualmente */
 .produto {
-    background: #f3eee3;
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background: #f3eee3; /* Define a cor de fundo do produto */
+    margin: 1em; /* Adiciona margem em torno de cada produto */
+    padding: 1em; /* Adiciona preenchimento em torno de cada produto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do produto */
+    border-radius: 10px; /* Arredonda os cantos do produto */
 }
 
+/* Estiliza a imagem dentro de cada produto */
 .produto img {
-    width: 320px;
-    max-width: 90%;
-    margin-top: 8px;
+    width: 320px; /* Define a largura da imagem */
+    max-width: 90%; /* Define a largura máxima da imagem para ser 90% do contêiner */
+    margin-top: 8px; /* Adiciona margem acima da imagem */
+    cursor: pointer; /* Define o cursor como ponteiro quando sobre o botão */
+    transition: transform 0.3s ease; /* Adiciona animação de transição ao aplicar transformações */
 }
 
+.produto img:hover {
+    transform: scale(
+        1.05
+    ); /* Aumenta ligeiramente o tamanho do botão quando o mouse estiver sobre ele */
+}
+
+/* Estiliza o título dentro de cada produto */
 .produto h3 {
-    font-weight: 400;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-weight: 400; /* Define a espessura da fonte */
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    margin-bottom: 10px; /* Adiciona margem na parte inferior do elemento */
+    cursor: pointer;
 }
 
+/* Estiliza o parágrafo dentro de cada produto */
 .produto p {
-    font-weight: 300;
-    text-transform: lowercase;
-    font-size: 1.1em;
+    font-weight: 300; /* Define a espessura da fonte */
+    text-transform: lowercase; /* Transforma o texto em letras minúsculas */
+    font-size: 1.1em; /* Define o tamanho da fonte */
 }
 
+/* Estilizando os botões */
 button {
-    background-color: #c4926e;
-    color: #f3eee3;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1em;
-    font-weight: 400;
-    text-transform: lowercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #c4926e; /* Define a cor de fundo do botão */
+    color: #f3eee3; /* Define a cor do texto do botão */
+    padding: 10px 20px; /* Adiciona preenchimento ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 50px; /* Arredonda os cantos do botão */
+    font-size: 1.1em; /* Define o tamanho da fonte do botão */
+    font-weight: 400; /* Define a espessura da fonte do botão */
+    text-transform: lowercase; /* Transforma o texto em letras minúsculas */
+    cursor: pointer; /* Define o cursor como ponteiro quando sobre o botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona animação de transição ao alterar a cor de fundo e transformação */
 }
 
+/* Altera a cor de fundo e a escala do botão quando o mouse estiver sobre ele */
 button:hover {
-    background-color: #977055;
-    transform: scale(1.05);
+    background-color: #977055; /* Define a cor de fundo do botão quando o mouse estiver sobre ele */
+    transform: scale(
+        1.05
+    ); /* Aumenta ligeiramente o tamanho do botão quando o mouse estiver sobre ele */
 }
 
-/* Estilos do Footer */
+/* Footer */
+/* Estilizando o rodapé da página */
 footer {
-    background: #703d1b;
-    color: #f3eee3;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: auto;
+    background: #703d1b; /* Define a cor de fundo do rodapé */
+    color: #f3eee3; /* Define a cor do texto dentro do rodapé */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 1em 0; /* Adiciona preenchimento vertical ao rodapé */
+    margin-top: auto; /* Empurra o rodapé para a parte inferior da página */
 }
 
+/* Estilizando o parágrafo dentro do rodapé */
 footer p {
-    margin: 12px 0;
+    margin: 12px 0; /* Adiciona margem acima e abaixo do parágrafo */
 }
 
+/* Estilizando as imagens de redes sociais no rodapé */
 .redes-sociais img {
-    width: 24px;
-    height: 24px;
-    margin: 8px 5px 0;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    width: 24px; /* Define a largura das imagens */
+    height: 24px; /* Define a altura das imagens */
+    margin: 8px 5px 0; /* Adiciona margem em torno das imagens */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse sobre as imagens */
+    transition: transform 0.3s ease; /* Adiciona animação de transição ao aplicar transformações */
 }
 
+/* Aumenta ligeiramente o tamanho das imagens das redes sociais quando o mouse estiver sobre elas */
 .redes-sociais img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Aumenta o tamanho das imagens */
 }
 
 /* Estilos para Tablets */
 @media screen and (min-width: 768px) {
+    /* Esta media query aplica estilos para dispositivos com largura de tela igual ou superior a 768px */
+
     body {
-        font-size: 18px;
+        font-size: 18px; /* Aumenta o tamanho da fonte em tablets para melhor legibilidade. */
     }
+
     section {
-        margin: 0 auto;
-        max-width: 600px;
+        margin: 0 auto; /* Centraliza as seções horizontalmente. */
+        max-width: 600px; /* Define a largura máxima das seções para evitar que se estendam demais em tablets. */
     }
 
     .grid-produtos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        display: grid; /* Muda a exibição para grid, permitindo um layout mais avançado. */
+        grid-template-columns: repeat(
+            2,
+            1fr
+        ); /* Cria duas colunas de igual largura. */
+        gap: 10px; /* Define o espaço entre os itens do grid. */
     }
 }
 
 /* Estilos para Desktop */
 @media screen and (min-width: 1024px) {
+    /* Esta media query aplica estilos para dispositivos com largura de tela igual ou superior a 1024px */
+
     section {
-        margin: 0 auto;
-        max-width: 1200px;
+        margin: 0 auto; /* Centraliza as seções horizontalmente. */
+        max-width: 1200px; /* Define a largura máxima das seções para evitar que se estendam demais em telas grandes. */
     }
 
     .sobre {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        display: grid; /* Usa grid para um layout mais avançado na seção sobre. */
+        grid-template-columns: 1fr 1fr; /* Cria duas colunas de igual largura. */
+        gap: 20px; /* Define o espaço entre os itens do grid. */
     }
 
     .sobre img {
-        grid-column: 1;
+        grid-column: 1; /* Posiciona a imagem na primeira coluna do grid. */
     }
 
     .sobre .texto-sobre {
-        grid-column: 2;
+        grid-column: 2; /* Posiciona o texto na segunda coluna do grid. */
     }
 
     #sobre p {
-        margin-top: 0;
+        margin-top: 0; /* Remove a margem superior do parágrafo na seção sobre. */
     }
 
     .grid-produtos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        display: grid; /* Muda a exibição para grid para um layout mais avançado. */
+        grid-template-columns: repeat(
+            4,
+            1fr
+        ); /* Cria quatro colunas de igual largura. */
+        gap: 10px; /* Define o espaço entre os itens do grid. */
     }
 }
